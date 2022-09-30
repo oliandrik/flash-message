@@ -1,3 +1,5 @@
+import { Button } from "./Button";
+
 import "./App.css";
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
       <img src="../../svg/exclamation.svg" alt="" />
       <img src="../../svg/question.svg" alt="" />
       <img src="../../svg/success.svg" alt="" />
+      <Button text="123" />
     </>
   );
 }
