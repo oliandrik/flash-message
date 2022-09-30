@@ -1,0 +1,23 @@
+.union {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &_variant {
+    &_error {
+      background-color: var(--error);
+    }
+    &_warning {
+      background-color: var(--warning);
+    }
+    &_success {
+      background-color: var(--success);
+    }
+    &_info {
+      background-color: var(--info);
+    }
+  }
+}

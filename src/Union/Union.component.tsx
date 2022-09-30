@@ -5,8 +5,16 @@ import { UnionProps } from "./Union.types";
 
 import styles from "./Union.module.scss";
 
-export const UnionComponent: React.FC<UnionProps> = ({ icon, className }) => {
-  const unionClass = classNames(styles.union, className);
+export const UnionComponent: React.FC<UnionProps> = ({
+  icon,
+  className,
+  variant,
+}) => {
+  const unionClass = classNames(
+    styles.union,
+    { [styles[`union_variant_${variant}`]]: variant },
+    className
+  );
 
   return (
     <div className={unionClass}>
